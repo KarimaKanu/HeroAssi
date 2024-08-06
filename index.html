@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="lg:mx-10 md:mx-10 sm:mx-4">
+    <section>
+      <nav class="my-4 py-5 border-b-2">
+        <div
+          class="md:flex lg:flex sm:grid md:flex-row sm:grid-cols-1 lg:flex-row lg:justify-around md:justify-around align-middle sm:justify-center"
+        >
+          <div class="">
+            <img src="images/Logo.png" alt="" />
+          </div>
+          <div class="sm:my-10 lg:my-0 md:my-0">
+            <button
+              onclick="BtnForSort()"
+              class="btn text-red-500 hover:bg-red-500 w-32 hover:text-white"
+            >
+              Sort By View
+            </button>
+          </div>
+          <div>
+            <a
+              href="anotherPage.html"
+              class="btn btn-secondary bg-red-500 hover:bg-red-400 border-red-500"
+              >Blog</a
+            >
+          </div>
+        </div>
+        <!-- <div
+          class="navbar bg-base-100 lg:flex justify-between sm:gird sm:grid-cols-1"
+        >
+          <div class="navbar-start">
+            <div class="dropdown"></div>
+            <img src="images/Logo.png" alt="" />
+          </div>
+          <div class="navbar-center lg:flex justify-around">
+            <div class="navbar-end">
+              <button
+                onclick="BtnForSort()"
+                class="btn text-red-500 hover:bg-red-500 w-32 hover:text-white"
+              >
+                Sort By View
+              </button>
+            </div>
+
+            <div class="navbar-end">
+              <a
+                href="anotherPage.html"
+                class="btn btn-secondary bg-red-500 hover:bg-red-400 border-red-500"
+                >Blog</a
+              >
+            </div>
+          </div>
+        </div> -->
+      </nav>
+      <main>
+        <div
+          class="grid lg:flex sm:grid-cols-2 md:flex lg:justify-center sm:justify-around align-middle gap-5 m-8 sm:"
+        >
+          <button
+            onclick="loadData(1000)"
+            class="btn btn-secondary w-24 bg-red-500 hover:bg-red-400 border-red-500"
+          >
+            All
+          </button>
+          <button
+            onclick="loadData(1001)"
+            class="btn btn-secondary w-24 bg-red-500 hover:bg-red-400 border-red-500"
+          >
+            Music
+          </button>
+          <button
+            onclick="loadData(1003)"
+            class="btn btn-secondary w-24 bg-red-500 hover:bg-red-400 border-red-500"
+          >
+            Comedy
+          </button>
+          <button
+            onclick="loadData(1005)"
+            class="btn btn-secondary w-24 bg-red-500 hover:bg-red-400 border-red-500"
+          >
+            Drawing
+          </button>
+        </div>
+        <div
+          id="main-div"
+          class="grid lg:grid-cols-4 sm:grid-cols-1 md:grid-cols-2 gap-4"
+        ></div>
+        <div id="opps"></div>
+      </main>
+      <footer></footer>
+      <script src="hero.js"></script>
+    </section>
+  </body>
+</html>
